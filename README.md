@@ -1,64 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Projeto de API de Poligonos da Emcash
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+API para cadastro e somas de poligonos
 
-## About Laravel
+Pré-Requisitos:
+O projeto foi desenvolvido a partir de Laravel e Mysql e insomnia
+Necessario importa o arquivo "poligonos.sql" para uma base de dados para a execução
+O projeto foi construido a parti da arquitetura MVC.
+O teste unitario foi feito contemplando que a base não pode ser nula ou zero
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Executando o projeto:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Após fazer o download do projeto, é necessario ativar ele usando o comando laravel a seguir.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Acesse terminal e entre no caminho da pasta onde ele esta baixado Ex: C:/Teste-emcash. e execute o comando "php artisan serve" ele ira passar o url do localhost com sua porta Ex: http://127.0.0.1:8000
+Obs:Não feche o prompt senão o projeto será desligado.
 
-## Learning Laravel
+Assim o projeto acessará suas rotas.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Cadastrando os poligonos:
+Depois que o processo esta ativado, use o insomnia para o cadastro dos poligonos.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Crie uma nova Request dentro dele do tipo 'POST' e o body como 'JSON'.
 
-## Laravel Sponsors
+Depois que for criado coloque a URL : http://localhost:8000/api/poligonos/retangulo para cadastrar retangulos e http://localhost:8000/api/poligonos/triangulo para cadastrar triangulos.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Dentro do terminal escreva o codigo abaixo.
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+![retangulo](https://user-images.githubusercontent.com/92166000/136819508-85607cdc-ff46-40e9-8dc8-1d11f12494c2.JPG)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Escreva a base e altura que desejar e clique em 'Send' assim o poligono estará cadastrado no banco.
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Realizando a soma de todos os poligonos cadastrados:
 
-## Security Vulnerabilities
+Crie um novo request do tipo 'GET' e adicione a URL http://localhost:8000/api/poligonos/total. Ela mostrará o total dos poligonos cadastrados.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+![triangulo](https://user-images.githubusercontent.com/92166000/136819867-f8da77b4-e301-4e3f-92c7-02347d385506.JPG)
+
+
+
+
+Dentro da WEB
+
+![trinagulo](https://user-images.githubusercontent.com/92166000/136819895-631e2912-eb13-46e0-920c-f8190e9f1e1d.JPG)
+
+
+
+
