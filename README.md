@@ -3,10 +3,10 @@ Projeto de API de Poligonos da Emcash
 API para cadastro e somas de poligonos
 
 Pré-Requisitos:
-O projeto foi desenvolvido a partir de Laravel e Mysql e insomnia
-Necessario importa o arquivo "poligonos.sql" para uma base de dados para a execução
+O projeto foi desenvolvido a partir de Laravel e Mysql e insomnia.
+Necessario importa o arquivo "poligonos.sql" para uma base de dados para a execução.
 O projeto foi construido a parti da arquitetura MVC.
-O teste unitario foi feito contemplando que a base não pode ser nula ou zero
+O teste unitario foi feito contemplando que a base não pode ser nula ou zero.
 
 Executando o projeto:
 
@@ -45,7 +45,7 @@ Crie um novo request do tipo 'GET' e adicione a URL http://localhost:8000/api/po
 
 
 
-Dentro da WEB
+Dentro da WEB.
 
 ![trinagulo](https://user-images.githubusercontent.com/92166000/136819895-631e2912-eb13-46e0-920c-f8190e9f1e1d.JPG)
 
