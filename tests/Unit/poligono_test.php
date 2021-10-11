@@ -19,7 +19,8 @@ class poligono_test extends TestCase
 
         $result = $testretangulo->requestretangulo();
 
-        $this -> $this->assertCount(9, $result);
+        $this->assertNull($result);
+
 
 
     }
@@ -30,7 +31,7 @@ class poligono_test extends TestCase
 
         $result = $testtriangulo->requestriangulo();
 
-        $this -> $this->assertCount(9, $result);
+        $this->assertNull($result);
 
 
     }
